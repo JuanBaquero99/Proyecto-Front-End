@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 0;
+        }
         * {
             background: papayawhip;
         }
         div {
             background: pink;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
         }
         .tittle {
             color: blueviolet;
@@ -48,10 +54,29 @@
         pp::first-letter {
             color : teal
         }
+        #sigale {
+            color : rebeccapurple
+        }
+        .container {
+            display: grid;
+            background: papayawhip;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            grid-template-columns: 1fr 1fr;
+        }
+        .item {
+            width: 30px;
+            height: 30px;
+            background: purple;
+        }
+        .container .item:nth-chil(2n + 1) {
+            background: cyan;
+        }
     </style>
 </head>
 <body>
-    <p>Sigale pa dentro mi rey</p>
+    <p id='sigale''>Sigale pa dentro mi rey</p>
     <div>
         <p>Hagale que es gratis</p>
     </div>
@@ -75,6 +100,11 @@
         </ul>
     </nav>
     <div class="tittle">Hola</div>
+    <div class="container"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
     <div id="tittle2">curioso internauta</div>
     <div>
         <p>Me gusta el verde</p>
