@@ -20,9 +20,41 @@
         a[href="https://www.linkedin.com/in/juan-pablo-baquero-davila-33aa74208"] {
             color: red;
         }
+        div p {
+            color : lime
+        }
+        div > div {
+            background: plum;
+        }
+        .es {
+            background: red;
+        }
+        div + section {
+            background: palevioletred;
+        }
+        div ~ p {
+            color : powderblue
+        }
+        p {
+            color : salmon
+        }
+        p:hover {
+            color : skyblue
+
+        }
+        div p:nth-child(2) {
+            color : violet
+        }
+        pp::first-letter {
+            color : teal
+        }
     </style>
 </head>
 <body>
+    <p>Sigale pa dentro mi rey</p>
+    <div>
+        <p>Hagale que es gratis</p>
+    </div>
     <header>
     </header>
     <section>
@@ -44,6 +76,14 @@
     </nav>
     <div class="tittle">Hola</div>
     <div id="tittle2">curioso internauta</div>
+    <div>
+        <p>Me gusta el verde</p>
+        <div class='es'>Y a veces sin color</div>
+    </div>
+    <div>
+        <p>Que lindo selector</p>
+        Me gustas tuuuu
+    </div>
 </body>
 </html>
 
