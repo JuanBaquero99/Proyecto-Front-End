@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z_index</title>
+    <style>
+        div {
+            position: absolute;
+            background: lawngreen;
+        }
+
+        .Red {
+            width: 20px;
+            height: 20px;
+            background: red;
+            z-index: 5;
+        }
+
+        .Blue {
+            width: 20px;
+            height: 20px;
+            background: blue;
+            z-index: 4;
+        }
+
+        .Yellow {
+            width: 20px;
+            height: 20px;
+            background: yellow;
+            z-index: 6;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="Red">Red</div>
+        <div class="Blue">Blue</div>
+        <div class="Yellow">Yellow</div>
+    </section>
+</body>
+
+</html>
